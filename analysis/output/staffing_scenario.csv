@@ -1,0 +1,6 @@
+Scenario,Logistics_Headcount,Billing_Headcount,Logistics_Monthly_Workload_Per_Agent,Billing_Monthly_Workload_Per_Agent,Annual_Cost_INR,Operational_Impact
+Baseline (Status Quo),5,4,28.6,24.97,0,Logistics agents resolve 28.6 tickets/mo with 26.2h median latency. Billing resolves 25.0 tickets/mo with 1.2h median latency.
+Scenario 1: 2 Hires to Billing (Priya Initial Assumption),5,6,28.6,16.65,900000,Addresses perceived 20.8% intake queue; overstaffs Billing resolving capacity (16.6 tickets/agent/mo) while 31.4% of intake is still transferred out to Logistics.
+Scenario 2: 2 Hires to Logistics (Evidence-Based Resolving Workload),7,4,20.43,24.97,900000,"Reduces Logistics individual load by 28.6% (from 28.6 to 20.4 tickets/agent/mo), providing critical capacity for the largest backend resolving workload."
+"Scenario 3: Split Allocation (1 Hire to Billing, 1 Hire to Logistics)",6,5,23.83,19.98,900000,Compromise allocation providing partial relief to Logistics (23.8 tickets/mo) and Billing (19.9 tickets/mo).
+Scenario 4: Fix Routing at Intake + 2 Hires to Logistics (Optimal),7,4,20.43,24.97,900000,"Corrects 696 misrouted delivery tickets at intake, eliminating Billing hand-off overhead (potential transfer-cost avoidance of up to ~Rs 1.93L — modeled scenario, not realized savings) and appropriately staffing Logistics."
